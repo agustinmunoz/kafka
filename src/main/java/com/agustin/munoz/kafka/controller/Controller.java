@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.agustin.munoz.kafka.service.Producer;
 
+import lombok.RequiredArgsConstructor;
+
 @RestController
 @RequestMapping(value = "/kafka")
 public class Controller {
