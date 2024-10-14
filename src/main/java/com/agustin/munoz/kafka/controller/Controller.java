@@ -11,15 +11,16 @@ import com.agustin.munoz.kafka.service.Producer;
 import lombok.RequiredArgsConstructor;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping(value = "/kafka")
 public class Controller {
 
    private final Producer producer;
 
-   @Autowired
+ /*  @Autowired
    Controller(Producer producer) {
        this.producer = producer;
-   }
+   }*/
 
    @PostMapping(value = "/publish")
    public void sendMessageToKafkaTopic(@RequestParam("message") String message) {

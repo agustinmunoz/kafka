@@ -13,6 +13,5 @@ spring:
     producer:
         bootstrap-servers: 192.168.1.13:9092
         key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.apache.kafka.common.serialization.StringSerializer
-        group-id: test-consumer-group       
+        value-serializer: org.apache.kafka.common.serialization.StringSerializer       
         
