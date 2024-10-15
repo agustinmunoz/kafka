@@ -7,7 +7,7 @@ spring:
     bootstrap-servers:  
     - 192.168.1.13:9092
     consumer:
-        bootstrap-servers: 192.168.1.13:9000
+        bootstrap-servers: 192.168.1.13:9092
         group-id: test-consumer-group
         auto-offset-reset: earliest
         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
