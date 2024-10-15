@@ -4,15 +4,15 @@ spring:
   application:
     name: kafka
   kafka:
-    bootstrap-servers: 192.168.1.13:9092
-    consumer:
-        bootstrap-servers: 192.168.1.13:9092
-        group-id: test-consumer-group
-        auto-offset-reset: earliest
-        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    producer:
-        bootstrap-servers: 192.168.1.13:9092
-        key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.apache.kafka.common.serialization.StringSerializer       
+    bootstrap-servers: localhost:9092
+    #consumer:
+        #bootstrap-servers: 192.168.1.13:9092
+        #group-id: test-consumer-group
+        #auto-offset-reset: earliest
+        #key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        #value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    #producer:
+        #bootstrap-servers: 192.168.1.13:9092
+        #key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        #value-serializer: org.apache.kafka.common.serialization.StringSerializer       
         
