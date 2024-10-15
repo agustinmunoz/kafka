@@ -13,7 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 public class Producer {
 
     //private static final Logger logger = LoggerFactory.getLogger(Producer.class);
-    private static final String TOPIC = "users";
+    private static final String TOPIC = "users2";
 
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
